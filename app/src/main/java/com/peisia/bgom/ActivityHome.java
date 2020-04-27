@@ -23,7 +23,6 @@ import com.google.android.gms.ads.MobileAds;
 import com.peisia.bgom.view.ImageViewFullMap;
 
 public class ActivityHome extends AppCompatActivity {
-    private AdView mAdView;
     private Spinner mSpinnerMapSelector;
     private ImageView mImageViewFullMap;
     private ImageViewFullMap mImageViewFullMapForDraw;
