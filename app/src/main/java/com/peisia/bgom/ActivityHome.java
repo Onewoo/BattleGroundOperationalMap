@@ -40,8 +40,7 @@ public class ActivityHome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         mContext = this;
-        initAdMob();    // 광고 초기화 및 세팅 모두
-        initView();
+        initView(); //세팅 초기화
         initTouch();
     }
 
@@ -72,12 +71,6 @@ public class ActivityHome extends AppCompatActivity {
         });
     }
 
-    private void initAdMob() {
-        MobileAds.initialize(this, "ca-app-pub-1478183271915956~6143017977");   // 내 광고 id 적어주기
-        mAdView = (AdView)findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
-    }
 
     private void initView() {
         mImageViewFullMap = (ImageView)findViewById(R.id.imageViewFullMap);
