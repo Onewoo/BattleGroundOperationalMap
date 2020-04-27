@@ -10,6 +10,7 @@ import android.view.View;
 
 /**
  * Created by 호양이 on 2018-03-13.
+ * Modified by 우보원 on 2020-04-27.
  */
 
 public class ImageViewFullMap extends View {
