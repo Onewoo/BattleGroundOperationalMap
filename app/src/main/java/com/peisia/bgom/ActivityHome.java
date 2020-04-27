@@ -42,6 +42,7 @@ public class ActivityHome extends AppCompatActivity {
         mContext = this;
         initView(); //세팅 초기화
         initTouch();
+        initButton();
     }
 
     private void initTouch() {
@@ -102,5 +103,14 @@ public class ActivityHome extends AppCompatActivity {
         mSpinnerMapSelector.setSelection(0);
     }
 
+    private void initButton() {
+        Button button2 = (Button) findViewById(R.id.button2);
+        button2.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mImageViewFullMapForDraw.invalidate();
+            }
+        });
+    }
 
 }
