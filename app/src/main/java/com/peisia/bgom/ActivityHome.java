@@ -35,6 +35,8 @@ public class ActivityHome extends AppCompatActivity {
     private float mTouchPointSecondX = 0;
     private float mTouchPointSecondY = 0;
 
+    private boolean status = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -108,7 +110,11 @@ public class ActivityHome extends AppCompatActivity {
         button2.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mImageViewFullMapForDraw.invalidate();
+                status = true;
+                if(status == true) {
+                    view.setVisibility(View.GONE);
+                    status = false;
+                }
             }
         });
     }
