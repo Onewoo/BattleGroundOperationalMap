@@ -90,6 +90,12 @@ public class ActivityHome extends AppCompatActivity {
                     case 1:
                         Glide.with(mContext).load(R.drawable.map_full_miramar).into(mImageViewFullMap);
                         break;
+                    case 2:
+                        Glide.with(mContext).load(R.drawable.map_full_sanhok).into(mImageViewFullMap);
+                        break;
+                    case 3:
+                        Glide.with(mContext).load(R.drawable.map_full_vikendi).into(mImageViewFullMap);
+                        break;
                     default:
                         Glide.with(mContext).load(R.drawable.map_full_erangel).into(mImageViewFullMap);
                         break;

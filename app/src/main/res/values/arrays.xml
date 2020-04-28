@@ -3,5 +3,7 @@
     <string-array name="map_full">
         <item>Erangel</item>
         <item>Miramar</item>
+        <item>Sanhok</item>
+        <item>Vikendi</item>
     </string-array>
 </resources>
