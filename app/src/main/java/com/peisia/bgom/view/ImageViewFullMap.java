@@ -74,6 +74,8 @@ public class ImageViewFullMap extends View {
                 mCanvasFullMap.drawCircle(secondX, secondY, FIRST_DOT_RADIUS, paint);
 
                 break;
+            case 3 :
+                invalidate();
         }
     }
 
@@ -88,6 +90,11 @@ public class ImageViewFullMap extends View {
         secondX = x;
         secondY = y;
         mode = 2;
+        invalidate();
+    }
+
+    public void eraseLine(){
+        mode = 3;
         invalidate();
     }
 }

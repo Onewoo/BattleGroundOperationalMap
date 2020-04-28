@@ -110,11 +110,7 @@ public class ActivityHome extends AppCompatActivity {
         button2.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
-                status = true;
-                if(status == true) {
-                    view.setVisibility(View.GONE);
-                    status = false;
-                }
+                mImageViewFullMapForDraw.eraseLine();
             }
         });
     }
